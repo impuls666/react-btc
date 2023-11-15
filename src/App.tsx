@@ -24,7 +24,12 @@ function App() {
   }, []);
   return (
     <main>
-      <Input value={amount} onChange={(e) => setAmount(e.target.value)} />
+      <Input
+        value={amount}
+        onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+          setAmount(e.target.value)
+        }
+      />
       <div className="mt-6">
         {results.map((result, index) => (
           <ResultRow provider={result.provider} key={index} btc={result.btc} />
