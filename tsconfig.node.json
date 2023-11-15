@@ -3,6 +3,9 @@
     "composite": true,
     "skipLibCheck": true,
     "module": "ESNext",
+    "checkJs": true,
+    "baseUrl": "./src",
+    "jsx": "react",
     "moduleResolution": "bundler",
     "allowSyntheticDefaultImports": true
   },
