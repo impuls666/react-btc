@@ -5,8 +5,8 @@ interface ResultRowProps {
 
 function ResultRow({ btc, provider }: ResultRowProps) {
   return (
-    <div>
-      <div>
+    <div className="p-4 my-2 rounded bg-gray-200/10">
+      <div className="text-lg font-semibold text-white">
         {provider} : {btc}
       </div>
     </div>
