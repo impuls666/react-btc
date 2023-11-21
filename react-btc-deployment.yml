@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: react-btc
-          image: impuls666/react-btc:react-btc
+          image: impuls666/react-btc:new
           ports:
             - containerPort: 80
           env:
