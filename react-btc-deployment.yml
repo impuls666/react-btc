@@ -17,6 +17,9 @@ spec:
           image: impuls666/react-btc:react-btc
           ports:
             - containerPort: 5731
+          env:
+            - name: PORT
+              value: "5731"
 ---
 apiVersion: v1
 kind: Service
