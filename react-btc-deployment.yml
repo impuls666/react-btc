@@ -28,7 +28,7 @@ metadata:
 spec:
   type: NodePort
   ports:
-    - port: 5173
+    - port: 80
       targetPort: 5173
   selector:
     app: react-btc
