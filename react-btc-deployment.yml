@@ -30,5 +30,7 @@ spec:
   ports:
     - port: 5731
       targetPort: 5731
+      protocol: TCP
+      nodePort: 31000
   selector:
     app: react-btc
