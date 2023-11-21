@@ -16,10 +16,7 @@ spec:
         - name: react-btc
           image: impuls666/react-btc:react-btc
           ports:
-            - containerPort: 5173
-          env:
-            - name: PORT
-              value: "5173"
+            - containerPort: 5731
 ---
 apiVersion: v1
 kind: Service
@@ -28,7 +25,7 @@ metadata:
 spec:
   type: NodePort
   ports:
-    - port: 80
-      targetPort: 5173
+    - port: 5731
+      targetPort: 5731
   selector:
     app: react-btc
