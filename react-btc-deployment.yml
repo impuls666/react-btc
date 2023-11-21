@@ -24,11 +24,11 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: jhooq-springboot
+  name: react-btc
 spec:
   type: NodePort
   ports:
     - port: 5173
       targetPort: 5173
   selector:
-    app: jhooq-springboot
+    app: react-btc
